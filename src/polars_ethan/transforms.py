@@ -25,7 +25,7 @@ def _demean(arr, result):
         else:
             result[i] = np.nan
 
-def demean(series: Union[pl.Series]) -> pl.Series:
+def demean(series: pl.Series) -> pl.Series:
     """
     Subtracts the mean from each value in a series. Null values are preserved
     and do not contrbiute to cardinality.
