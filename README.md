@@ -5,7 +5,7 @@ published package, so it is a good exercsie.
 
 ### Demean
 
-The `demean` function subtracts the mean from each non-NaN value in an array, preserving NaN values.
+The `demean` function subtracts the mean from each non-Null value in a Series, preserving Null values.
 
 ```python
 import polars as pl
