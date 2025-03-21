@@ -27,6 +27,9 @@ cameras = cameras.with_columns(
 )
 
 print(cameras)
+```
+Output:
+```
 ┌────────┬─────────┬───────┬─────────┐
 │ brand  ┆ model   ┆ price ┆ d_price │
 │ ---    ┆ ---     ┆ ---   ┆ ---     │
