@@ -1,6 +1,6 @@
 [project]
 name = "polars_ethan"
-version = "0.3.4"
+version = "0.3.0"
 description = "Fast Polars functions that Ethan likes to use."
 readme = "README.md"
 requires-python = ">=3.13"
