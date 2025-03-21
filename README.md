@@ -22,10 +22,8 @@ cameras = pl.DataFrame(
 
 cameras = cameras.with_columns(
     pl.col('price')
-    .fill_null(np.nan)
     .map_batches(demean)
     .over(pl.col("brand"))
-    .fill_nan(None)
     .alias('d_price')
 )
 
@@ -46,5 +44,3 @@ Output:
 │ Mamiya ┆ 645 Pro ┆ 900   ┆ -600.0  │
 └────────┴─────────┴───────┴─────────┘
 ```
-Note how null values must be converted to NaN before being passed to the function.
-Generalized ufuncs do not except null values, but NaN's are fine and behave how we like.
