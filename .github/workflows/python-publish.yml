@@ -34,7 +34,7 @@ jobs:
         run: uv build
 
       - name: Publish
-        run: uv publish --trusted-publishing
+        run: uv publish --trusted-publishing always
 
   # pypi-publish:
   #   runs-on: ubuntu-latest
