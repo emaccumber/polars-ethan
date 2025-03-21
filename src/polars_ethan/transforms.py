@@ -1,7 +1,6 @@
 from numba import float64, guvectorize
 import numpy as np
 import polars as pl
-from typing import Union, Callable
 
 @guvectorize([(float64[:], float64[:])], "(n)->(n)")
 def _demean(arr, result):
