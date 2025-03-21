@@ -27,7 +27,6 @@ cameras = cameras.with_columns(
 )
 
 print(cameras)
-```
 ┌────────┬─────────┬───────┬─────────┐
 │ brand  ┆ model   ┆ price ┆ d_price │
 │ ---    ┆ ---     ┆ ---   ┆ ---     │
@@ -41,6 +40,5 @@ print(cameras)
 │ Mamiya ┆ 645 Pro ┆ 900   ┆ -600.0  │
 └────────┴─────────┴───────┴─────────┘
 ```
-
 Note how null values must be converted to NaN before being passed to the function.
 Generalized ufuncs do not except null values, but NaN's are fine and behave as we would like.
