@@ -1,5 +1,5 @@
-polars-ethan is a Python library that adds useful functions for use with [Polars](https://github.com/pola-rs/polars). This is my first 
-published package, so it is a also a pedagogical exercise. 
+polars-ethan is a Python library that adds useful functions for use with [Polars](https://github.com/pola-rs/polars). This is also my first 
+published package, so it is a good exercsie. 
 
 ## Features
 
