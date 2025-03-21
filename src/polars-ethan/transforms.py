@@ -1,4 +1,4 @@
-from numba import float64, guvectorize, int64
+from numba import float64, guvectorize
 import numpy as np
 
 @guvectorize([(float64[:], float64[:])], "(n)->(n)")
