@@ -1,3 +1,6 @@
+polars-ethan is a Python library that adds useful functions for use with Polars. This is my first 
+published package, so it is a also a pedagogical exercise. 
+
 ## Features
 
 ### Demean
