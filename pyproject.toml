@@ -1,5 +1,5 @@
 [project]
-name = "polars-ethan"
+name = "polars_ethan"
 version = "0.1.0"
 description = "Fast Polars functions that Ethan likes to use."
 readme = "README.md"
