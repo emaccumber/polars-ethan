@@ -1,8 +1,11 @@
 from numba import float64, guvectorize
 import numpy as np
+import polars as pl
+from typing import Union, Callable
 
 @guvectorize([(float64[:], float64[:])], "(n)->(n)")
-def demean(arr, result):
+def _demean(arr, result):
+    """Internal implementation of demean."""
     total = 0
     count = 0
 
@@ -21,3 +24,15 @@ def demean(arr, result):
             result[i] = value - mean
         else:
             result[i] = np.nan
+
+def demean(series: Union[pl.Series]) -> pl.Series:
+    """
+    Subtracts the mean from each value in a series. Null values are preserved
+    and do not contrbiute to cardinality.
+
+    Null values are converted to NaN on the fly, as generalized ufuncs do not accept
+    the former."
+    """
+    filled = series.fill_null(np.nan)
+    result = _demean(filled)
+    return result.fill_nan(None)
