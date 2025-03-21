@@ -44,4 +44,4 @@ Output:
 └────────┴─────────┴───────┴─────────┘
 ```
 Note how null values must be converted to NaN before being passed to the function.
-Generalized ufuncs do not except null values, but NaN's are fine and behave as we would like.
+Generalized ufuncs do not except null values, but NaN's are fine and behave how we like.
