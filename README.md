@@ -1,8 +1,8 @@
 ![PyPI - Version](https://img.shields.io/pypi/v/polars_ethan)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/polars_ethan)
 
-polars-ethan is a Python library that adds useful functions for use with [Polars](https://github.com/pola-rs/polars). This is also my first 
-published package, so it is a good exercsie. 
+polars-ethan is a Python library that adds useful functions for use with [Polars](https://github.com/pola-rs/polars). It is also a good
+exercise in package design and publishing for me.
 
 ## Features
 
