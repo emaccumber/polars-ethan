@@ -20,7 +20,7 @@ classifiers = [
     "Intended Audience :: Developers",
 ]
 keywords = ["polars", "tools", "demean", "data science"]
-license = "MIT"
+license = "Apache-2.0"
 license-files = ["LICEN[CS]E*"]
 
 [project.urls]
