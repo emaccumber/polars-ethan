@@ -27,10 +27,10 @@ def _demean(arr, result):
 def demean(series: pl.Series) -> pl.Series:
     """
     Subtracts the mean from each value in a series. Null values are preserved
-    and do not contrbiute to cardinality.
+    and do not contrbiute to the count of elements when calculating the mean.
 
     Null values are converted to NaN on the fly, as generalized ufuncs do not accept
-    the former."
+    the former. NaN values are then converted back to Null."
     """
     filled = series.fill_null(np.nan)
     result = _demean(filled)
