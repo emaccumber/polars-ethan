@@ -14,7 +14,7 @@ The `demean` function subtracts the mean from each non-Null value in a Series, p
 import polars as pl
 from ethanpolars import demean
 
-# Sample data...
+# Sample data
 cameras = pl.DataFrame(
     {
         "brand": ["Leica", "Leica", "Leica", "Mamiya", "Mamiya", "Mamiya"],
