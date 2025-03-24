@@ -4,7 +4,7 @@
 polars-ethan is a Python library that adds useful functions for use with [Polars](https://github.com/pola-rs/polars). Functions are
 compiled into fast machine code, preserving Polars' performance.
 
-This was also a good exercise in package design and publishing for me.
+This was also an exercise in package design and publishing for me.
 
 ## Features
 
