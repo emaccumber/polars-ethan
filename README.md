@@ -10,7 +10,7 @@ This was also an exercise in package design and publishing for me.
 
 ### Demean
 
-The `demean` function subtracts the mean from each non-Null value in a Series, preserving Null values.
+The `demean` function subtracts the mean from each non-Null value in a Series.
 
 ```python
 import polars as pl
