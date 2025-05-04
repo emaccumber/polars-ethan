@@ -14,7 +14,7 @@ The `demean` function subtracts the mean from each non-Null value in a Series.
 
 ```python
 import polars as pl
-from ethanpolars import demean
+from polars_ethan.transforms import demean
 
 # Sample data
 cameras = pl.DataFrame(
